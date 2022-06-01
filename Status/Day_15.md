@@ -49,7 +49,18 @@ pattern = "\w+@(\w+).com"
 ans = re.findall(pattern,email)
 print(ans)
 ```
+---
+```python
+# easy way using 2 lists.
+def fetch(mail):
+    l = mail.split("@")
+    x=l[1].split(".")
+    return x[0]
 
+mail = input("Enter mail id: ")
+print(fetch(mail))
+    
+```
 ---
 
 # Question 55
